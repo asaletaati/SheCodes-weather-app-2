@@ -19,7 +19,7 @@ function search() {
 }
 
 function currentLocation() {
-  var apiKey = "YOUR_API_KEY";
+  var apiKey = "5863935ee9cca4c02ed68203f807c65b";
   var tempUnit = document.querySelector('input[name="tempUnit"]:checked').value;
 
   navigator.geolocation.getCurrentPosition(function(position) {
