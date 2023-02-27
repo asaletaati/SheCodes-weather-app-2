@@ -1,5 +1,5 @@
 function search() {
-  var apiKey = "YOUR_API_KEY";
+  var apiKey = "5863935ee9cca4c02ed68203f807c65b";
   var cityName = document.getElementById("search-box").value;
   var tempUnit = document.querySelector('input[name="tempUnit"]:checked').value;
 
