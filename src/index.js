@@ -1,5 +1,5 @@
 function search() {
-  var apiKey = "2980ff43226d67e53abfcdb6d457dcc8";
+  var apiKey = "YOUR_API_KEY";
   var cityName = document.getElementById("search-box").value;
   var tempUnit = document.querySelector('input[name="tempUnit"]:checked').value;
 
@@ -19,7 +19,7 @@ function search() {
 }
 
 function currentLocation() {
-  var apiKey = "2980ff43226d67e53abfcdb6d457dcc8";
+  var apiKey = "YOUR_API_KEY";
   var tempUnit = document.querySelector('input[name="tempUnit"]:checked').value;
 
   navigator.geolocation.getCurrentPosition(function(position) {
@@ -34,3 +34,10 @@ function currentLocation() {
     });
   });
 }
+
+document.getElementById("search-box").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    search();
+  }
+});
